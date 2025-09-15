@@ -10,11 +10,15 @@
     "list": "zenn list:articles",
     "obs:pull": "cd /Users/fumi/Repos/notes && npm run zenn:pull"
   },
-  "keywords": ["zenn", "articles", "tech"],
+  "keywords": [
+    "zenn",
+    "articles",
+    "tech"
+  ],
   "author": "Fumi",
   "license": "MIT",
   "dependencies": {
-    "zenn-cli": "^0.1.153"
+    "zenn-cli": "^0.2.3"
   },
   "devDependencies": {
     "textlint": "^13.3.2",
