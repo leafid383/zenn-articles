@@ -1,0 +1,31 @@
+name: Zenn Content CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  textlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run textlint
+        run: |
+          npx textlint --config .textlintrc articles/ || true
+        continue-on-error: true
+        
+      - name: List articles
+        run: npx zenn list:articles

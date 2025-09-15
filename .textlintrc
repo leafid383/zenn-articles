@@ -1,0 +1,18 @@
+{
+  "filters": {},
+  "rules": {
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 100
+      },
+      "max-kanji-continuous-len": {
+        "max": 6,
+        "allow": ["機械学習", "深層学習", "人工知能", "Next.js", "React", "JavaScript"]
+      },
+      "no-mix-dearu-desumasu": {
+        "preferInBody": "ですます",
+        "strict": false
+      }
+    }
+  }
+}
