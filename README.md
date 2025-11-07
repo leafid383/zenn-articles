@@ -1,4 +1,4 @@
-# Fumi's Zenn Articles
+# Kawazy's Zenn Articles
 
 このリポジトリはZennで公開する技術記事を管理しています。
 
